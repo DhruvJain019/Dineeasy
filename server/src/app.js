@@ -11,7 +11,7 @@ const formatReservation = require("./formatReservation");
 const { auth } = require("express-oauth2-jwt-bearer");
 const checkJwt = auth({
   audience: 'unique identifier',
-  issuerBaseURL: 'https://dev-4xodr7e0fq238q7z.us.auth0.com',
+  issuerBaseURL: 'https://dev-4xodr7e0fq238q7z.us.auth0.com/',
   tokenSigningAlg: 'RS256'
 });
 app.use(cors());
